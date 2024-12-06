@@ -1,27 +1,20 @@
-# Thomas Fire Scarring 2017
-
-![thomas fire image](images/thomas-fire-ojai.jpeg)
-Image credits: [spookysnoopy via Imgur](https://imgur.com/gallery/thomas-fire-ojai-california-OJdjw)
-
+# Thomas Fire Environmental Impact Analysis
 
 ## About
-This repository contains notebooks `hwk4-task2-fire-perimeter-MORRIS-SIBAJA.ipynb` and `hwk4-task2-false-color-MORRIS-SIBAJA.ipynb` whose goal are to analyze the fire scarring of the 2017 Thomas Fire in Santa Barbara and Ventura Counties.
-
-After examining geospatial and tabular datasets, we created a border of the Thomas Fire boundary and overlayed it over a false color map of the fire scarring.
-This completed map is located at the bottom of the `hwk4-task2-false-color-MORRIS-SIBAJA.ipynb` notebook.
+This repository contains notebooks `thomas-fire-analysis.ipynb` and `thomas-fire-analysis.ipynb` and a combination of the two `final-project-thomas-fire.ipynb` whose goal are to analyze the effects on AQI and fire scarring from the 2017 Thomas Fire. This was one of California’s largest wildfires, which burned over 280,000 acres across Ventura and Santa Barbara counties. This repository includes examinations the fire’s impact on air quality using AQI data from the US Environmental Protection Agency and visualizes burn severity and fire scars using false-colored Landsat multispectral geospatial data.
 
 ### Highlights
 
-- Data wrangling and exploration with `pandas` and `rioxarray`
-- Geospatial data wrangling with `geopandas` and `rioxarray`
-- Merging of tabular and vector data
-- Creating and customizing a false color map using `matplotlib.pyplot`
+- Import and explore AQI and Landsat data to analyze the Thomas Fires
+- Create time series maps to explore the impact of the wildfires on AQI
+- Create true and false color images to highlight the fire’s breadth
+- Visualize the false color fire scar alongside perimeter data for detailed analysis 
 
 ### Data
 
 #### U.S. Air Quality Index (AQI)
 
-The U.S. Air Quality Index (AQI), developed by the EPA, communicates outdoor air quality and associated health risks through six color-coded categories, ranging from “Good” (AQI ≤ 50) to “Hazardous” (AQI > 300). AQI values up to 100 indicate satisfactory air quality, aligned with national health standards, while values above 100 signal unhealthy conditions—initially for sensitive groups and eventually for all as pollution levels rise. The color-coded system enables quick identification of air quality concerns in communities.
+The U.S. Air Quality Index (AQI), developed by the EPA, communicates outdoor air quality and associated health risks through six color-coded categories, ranging from “Good” (AQI ≤ 50) to “Hazardous” (AQI > 300). AQI values up to 100 indicate satisfactory air quality, aligned with national health standards, while values above 100 signal unhealthy conditions The color-coded system enables quick identification of air quality concerns in communities.
 
 #### Landset 8 Satellite Collection
 
@@ -39,24 +32,24 @@ California Department of Forestry and Fire Protection (CAL FIRE), [calfire_all.g
 - Earth Resources Observation and Science (EROS) Center. (2020). Landsat 7 Enhanced Thematic Mapper Plus Level-2, Collection 2. U.S. Geological Survey. https://doi.org/10.5066/P9C7I13B
 - Earth Resources Observation and Science (EROS) Center. (2020). Landsat 8-9 Operational Land Imager / Thermal Infrared Sensor Level-2, Collection 2. U.S. Geological Survey. https://doi.org/10.5066/P9OGBGM6
 
+Galaz García, Carmen. Assignment4 – EDS 220 - Working with Environmental Datasets. (n.d.). https://meds-eds-220.github.io/MEDS-eds-220-course/assignments/assignment2.html
+
 Galaz García, Carmen. Assignment4 – EDS 220 - Working with Environmental Datasets. (n.d.). https://meds-eds-220.github.io/MEDS-eds-220-course/assignments/assignment4.html
 
-M. M. Bennett, J. K. Chen, L. F. Alvarez León, and C. J. Gleason, “The politics of pixels: A review and agenda for critical remote sensing,” Progress in Human Geography, vol. 46, no. 3, pp. 729–752, Jun. 2022, doi: 10.1177/03091325221074691. Available: https://journals.sagepub.com/doi/10.1177/03091325221074691. [Accessed: Nov. 23, 2024]
 
 ### Repository organization
 
 ```
- eds220-hwk4
+ thomas-fire-analysis
 │   README.md
-|   hwk4-task1-reflection-MORRIS-SIBAJA.md
-|   hwk4-task2-fire-perimeter-MORRIS-SIBAJA.ipynb
-│   hwk4-task2-false-color-MORRIS-SIBAJA.ipynb
+|   thomas-fire-analysis.ipynb
+|   thomas-fire-aqi.ipynb
+│   thomas-fire-false-color.ipynb
 |   .gitignore
 │
 └───data
 |   |   landsat8-2018-01-26-sb-simplified.nc
 |   |   thomas_2017.geojson
-|       California_Fire_Perimeters_4280901625349411772.geojson available from link above
 |
 └───images
     |   thomas-fire-ojai.jpeg
