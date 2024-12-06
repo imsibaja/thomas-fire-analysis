@@ -10,18 +10,24 @@ This repository contains notebooks `hwk4-task2-fire-perimeter-MORRIS-SIBAJA.ipyn
 After examining geospatial and tabular datasets, we created a border of the Thomas Fire boundary and overlayed it over a false color map of the fire scarring.
 This completed map is located at the bottom of the `hwk4-task2-false-color-MORRIS-SIBAJA.ipynb` notebook.
 
-## Highlights
+### Highlights
 
 - Data wrangling and exploration with `pandas` and `rioxarray`
 - Geospatial data wrangling with `geopandas` and `rioxarray`
 - Merging of tabular and vector data
 - Creating and customizing a false color map using `matplotlib.pyplot`
 
-## Data
+### Data
 
-The data for this analysis is housed in this repository, except for California_Fire_Perimeters_4280901625349411772.geojson, which can be found [here](https://gis.data.cnra.ca.gov/api/download/v1/items/e3802d2abf8741a187e73a9db49d68fe/geojson?layers=0)
+#### U.S. Air Quality Index (AQI)
 
-## References
+The U.S. Air Quality Index (AQI), developed by the EPA, communicates outdoor air quality and associated health risks through six color-coded categories, ranging from “Good” (AQI ≤ 50) to “Hazardous” (AQI > 300). AQI values up to 100 indicate satisfactory air quality, aligned with national health standards, while values above 100 signal unhealthy conditions—initially for sensitive groups and eventually for all as pollution levels rise. The color-coded system enables quick identification of air quality concerns in communities.
+
+#### Landset 8 Satellite Collection
+
+This dataset consists of simplified bands (red, green, blue, near-infrared, and shortwave infrared) from Landsat Collection 2 Level-2 surface reflectance data, which was atmospherically corrected and captured by NASA’s Landsat 8 satellite. It was sourced from the Microsoft Planetary Computer data catalog and preprocessed to exclude non-land areas and reduce spatial resolution for ease of computation.
+
+### References
 
 [CalFire Fire Perimeter Data](https://www.fire.ca.gov/what-we-do/fire-resource-assessment-program/fire-perimeters)
 
@@ -37,7 +43,7 @@ Galaz García, Carmen. Assignment4 – EDS 220 - Working with Environmental Data
 
 M. M. Bennett, J. K. Chen, L. F. Alvarez León, and C. J. Gleason, “The politics of pixels: A review and agenda for critical remote sensing,” Progress in Human Geography, vol. 46, no. 3, pp. 729–752, Jun. 2022, doi: 10.1177/03091325221074691. Available: https://journals.sagepub.com/doi/10.1177/03091325221074691. [Accessed: Nov. 23, 2024]
 
-## Repository organization
+### Repository organization
 
 ```
  eds220-hwk4
