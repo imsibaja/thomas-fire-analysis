@@ -1,5 +1,8 @@
 # Thomas Fire Environmental Impact Analysis
 
+![thomas fire image](images/thomas-fire-ojai.jpeg)
+Image credits: [spookysnoopy via Imgur](https://imgur.com/gallery/thomas-fire-ojai-california-OJdjw)
+
 ## About
 This repository contains notebooks `thomas-fire-analysis.ipynb` and `thomas-fire-analysis.ipynb` and a combination of the two `final-project-thomas-fire.ipynb` whose goal are to analyze the effects on AQI and fire scarring from the 2017 Thomas Fire. This was one of California’s largest wildfires, which burned over 280,000 acres across Ventura and Santa Barbara counties. This repository includes examinations the fire’s impact on air quality using AQI data from the US Environmental Protection Agency and visualizes burn severity and fire scars using false-colored Landsat multispectral geospatial data.
 
