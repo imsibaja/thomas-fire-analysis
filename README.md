@@ -23,6 +23,10 @@ The U.S. Air Quality Index (AQI), developed by the EPA, communicates outdoor air
 
 This dataset consists of simplified bands (red, green, blue, near-infrared, and shortwave infrared) from Landsat Collection 2 Level-2 surface reflectance data, which was atmospherically corrected and captured by NASA’s Landsat 8 satellite. It was sourced from the Microsoft Planetary Computer data catalog and preprocessed to exclude non-land areas and reduce spatial resolution for ease of computation.
 
+#### California Fire Perimeters
+
+This database contains spatial distribution information of both wild and prescribed fires in California. The data comes with a warning of its incompleteness. Some records were lost or damaged, so fire perimeters may be missing. There may also be duplicate or an over estimation of fire perimeters. The database is maintained by the California Department of Forestry and Fire Protection's Fire and Resource Assessment Program.
+
 ### References
 
 [CalFire Fire Perimeter Data](https://www.fire.ca.gov/what-we-do/fire-resource-assessment-program/fire-perimeters)
